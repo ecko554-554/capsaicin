@@ -1,0 +1,13 @@
+# Binaries
+capsaicin
+capsaicin.exe
+
+# Output files
+*.json
+*.html
+*.txt
+*.log
+
+# OS Specific
+.DS_Store
+Thumbs.db
